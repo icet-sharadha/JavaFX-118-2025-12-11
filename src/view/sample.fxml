@@ -4,17 +4,23 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SampleController">
+<AnchorPane prefHeight="400.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SampleController">
    <children>
-      <Button layoutX="269.0" layoutY="278.0" mnemonicParsing="false" onAction="#btnClickMeOnAction" text="Click Me" />
-      <Label fx:id="lblHello" layoutX="203.0" layoutY="131.0" text="Hello">
+      <TextField fx:id="txtUserName" layoutX="236.0" layoutY="91.0" promptText="username" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004586" height="62.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="633.0" />
+      <Label layoutX="231.0" layoutY="17.0" text="Add Customer" textFill="WHITE">
          <font>
-            <Font size="42.0" />
+            <Font name="System Bold" size="21.0" />
          </font>
       </Label>
-      <TextField fx:id="txtUserName" layoutX="226.0" layoutY="214.0" />
+      <TextField fx:id="txtEmail" layoutX="236.0" layoutY="135.0" promptText="email" />
+      <TextField fx:id="txtAddress" layoutX="399.0" layoutY="91.0" promptText="address" />
+      <TextField fx:id="txtSalary" layoutX="71.0" layoutY="135.0" promptText="salary" />
+      <TextField fx:id="txtId" layoutX="70.0" layoutY="91.0" promptText="id" />
+      <Button layoutX="454.0" layoutY="135.0" mnemonicParsing="false" onAction="#btnAddCustomerOnAction" text="Add Customer" />
    </children>
 </AnchorPane>
